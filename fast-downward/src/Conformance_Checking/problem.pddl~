@@ -1,0 +1,23 @@
+(define (problem Align) (:domain Mining)
+(:objects
+ciao1 ciao0 - ciao
+move1 move0 - move
+state0 - state
+)
+(:init
+(first_task_of_the_trace ?x - ciao0)
+(pre ciao0 move0)
+(pre move0 ciao1)
+(pre ciao1 move1)
+(pre move1 state0)
+(last_task_of_the_trace ?x - state0)
+(traced ciao0)
+(traced move0)
+(traced ciao1)
+(traced move1)
+(traced state0)
+)
+(:goal
+(absence-ciao)
+)
+)
